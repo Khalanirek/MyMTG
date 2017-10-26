@@ -5,17 +5,27 @@
  */
 package mymtg;
 
+import java.awt.EventQueue;
+import javax.swing.JFrame;
+import mymtg.DeckCreator.*;
+
 /**
  *
- * @author Piotrek
+ * @author Piotr Turliński
  */
 public class MyMTG {
-
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        
+        
+        EventQueue.invokeLater(() -> 
+        {
+            JFrame frame = new DeckCreatorFrame();         
+            frame.setVisible(true);
+        });
     }
     
 }
